@@ -219,12 +219,14 @@ a {
   font-family: 'Akaya Kanadaka', cursive;
   font-size: 35px;
 }
+.conainer .act {
+  font-family: 'Akaya Kanadaka', cursive;
+}
 .conainer .act h2 {
   font-size: 45px;
   font-weight: bolder;
   text-align: center;
   padding-top: 35px;
-  font-family: 'Akaya Kanadaka', cursive;
 }
 .conainer .act .cards {
   padding-top: 50px;
