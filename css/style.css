@@ -1,0 +1,270 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Font";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+span,
+div,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #181c25;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.mouse-parallax {
+  z-index: -100;
+  height: 500px;
+  position: absolute;
+  overflow: hidden;
+}
+.mouse-parallax-bg {
+  z-index: -100;
+  position: fixed;
+  background-image: url("../img/bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 110%;
+  height: 110%;
+  transition: all 0.1s ease;
+}
+.conainer {
+  z-index: 1;
+}
+.conainer .menu-container .overlay {
+  display: none;
+}
+.conainer .menu-container .mobile-nav {
+  display: none;
+}
+.conainer .container-header {
+  background: #f8f8f8;
+  padding: 5px 15px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.conainer .container-header.active {
+  opacity: 0;
+  visibility: hidden;
+}
+.conainer .container-header .logo {
+  display: inline-block;
+}
+.conainer .container-header .logo img {
+  width: 50px;
+}
+.conainer .container-header .logo h1 {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 35px;
+}
+.conainer .container-header .clothes {
+  margin: auto;
+  display: inline-block;
+}
+.conainer .container-header .clothes .dropdown {
+  position: relative;
+}
+.conainer .container-header .clothes .dropdown.active .drop-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+}
+.conainer .container-header .clothes .dropdown .drop-btn {
+  background: none;
+  color: #34495e;
+  display: inline-block;
+  padding: 12px 32px 12px 20px;
+  user-select: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.conainer .container-header .clothes .dropdown .drop-menu {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 115%;
+  width: 100%;
+  opacity: 0;
+  background: #f8f8f8;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.conainer .container-header .clothes .dropdown .drop-menu ul li a {
+  font-weight: bolder;
+  color: #34495e;
+  padding: 12px 20px;
+  display: block;
+}
+.conainer .container-header .page {
+  display: inline-block;
+  float: right;
+  padding-right: 85px;
+}
+.conainer .container-header .page h2 {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 35px;
+}
+.conainer .container-header-animation {
+  background: #f8f8f8;
+  padding: 5px 15px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(-120px);
+}
+.conainer .container-header-animation.active {
+  transform: translateY(-58px);
+  opacity: 1;
+  visibility: visible;
+}
+.conainer .container-header-animation .logo {
+  display: inline-block;
+}
+.conainer .container-header-animation .logo img {
+  width: 50px;
+}
+.conainer .container-header-animation .logo button {
+  display: none;
+}
+.conainer .container-header-animation .logo h1 {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 35px;
+}
+.conainer .container-header-animation .clothes {
+  margin: auto;
+  display: inline-block;
+}
+.conainer .container-header-animation .clothes .dropdown {
+  position: relative;
+}
+.conainer .container-header-animation .clothes .dropdown.active .drop-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+}
+.conainer .container-header-animation .clothes .dropdown .drop-btn {
+  background: none;
+  color: #34495e;
+  display: inline-block;
+  padding: 12px 32px 12px 20px;
+  user-select: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.conainer .container-header-animation .clothes .dropdown .drop-menu {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 115%;
+  width: 100%;
+  opacity: 0;
+  background: #f8f8f8;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.conainer .container-header-animation .clothes .dropdown .drop-menu ul li a {
+  font-weight: bolder;
+  color: #34495e;
+  padding: 12px 20px;
+  display: block;
+}
+.conainer .container-header-animation .page {
+  display: inline-block;
+  float: right;
+  padding-right: 85px;
+}
+.conainer .container-header-animation .page h2 {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 35px;
+}
+.conainer .act h2 {
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 35px;
+  font-family: 'Akaya Kanadaka', cursive;
+}
+.conainer .act .cards {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.conainer .act .cards .card {
+  padding-right: 100px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+.conainer .act .cards .card img {
+  width: 250px;
+  transition: all 0.5s;
+}
+.conainer .act .cards .card img:hover {
+  transform: scale(1.1);
+}
+.conainer .act .cards .card h2 {
+  font-weight: bolder;
+  font-size: 35px;
+}
+.conainer .act .cards .card p {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.me {
+  margin-top: 55px;
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  user-select: none;
+}
+.me h2 {
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  padding-top: 15px;
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
