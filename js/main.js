@@ -1,3 +1,5 @@
+// Дисант меню
+
 let drops = document.querySelectorAll('.dropdown');
 
 
@@ -8,6 +10,9 @@ drops.forEach(function(drop) {
         this.classList.toggle('active');
     });
 });
+
+
+// верхние воины
 
 document.addEventListener('click', function() {
     drops.forEach(drop => drop.classList.toggle('active', false));
@@ -26,7 +31,7 @@ $(window).scroll(function(){
     }
   });
 
-
+// бездна( по выбору )
 
 const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -46,7 +51,7 @@ for (let anchor of anchors) {
   })
 }
 
-
+// самонавадяшееся ракеты
 
 let bg = document.querySelector('.mouse-parallax-bg');
 window.addEventListener('mousemove', function(e) {
@@ -55,31 +60,7 @@ window.addEventListener('mousemove', function(e) {
 	bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
 });
 
-
-
-
-
-// зукухов
-
-
-$(document).ready(function() {
-    $("body").css("display", "none");
-
-    $("body").fadeIn(2000);
-
-    $("a.transition").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $("body").fadeOut(1000, redirectPage);
-    });
-
-    function redirectPage() {
-        window.location = linkLocation;
-    }
-});
-
-
-
+// задолбавшееся меню
 
 let mobileBtns = document.querySelectorAll('[data-mobile]');
 
@@ -96,3 +77,9 @@ mobileBtns.forEach(function(mobile) {
         }
     });
 });
+
+
+
+
+
+

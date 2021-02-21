@@ -30,6 +30,7 @@
     background-color: #fff;
     transition: all 0.3s ease;
     transform: translateX(-100%);
+    overflow: scroll;
   }
   .conainer .menu-container .mobile-nav.active {
     transform: translateX(0);
@@ -108,8 +109,5 @@
   }
   .conainer .act .cards .card {
     padding-right: 0;
-  }
-  .me {
-    display: none;
   }
 }

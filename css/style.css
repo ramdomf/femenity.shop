@@ -37,7 +37,7 @@ a {
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #181c25;
+  background: #3361c5;
 }
 .wrapper {
   max-width: 1200px;
@@ -59,6 +59,32 @@ a {
   width: 110%;
   height: 110%;
   transition: all 0.1s ease;
+}
+#p_prldr {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #f1f1f1;
+  z-index: 30;
+}
+.contpre small {
+  font-size: 25px;
+}
+.contpre {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  margin-left: -125px;
+  margin-top: -75px;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: -2px;
+  text-align: center;
+  line-height: 35px;
 }
 .conainer {
   z-index: 1;
@@ -131,15 +157,6 @@ a {
   padding: 12px 20px;
   display: block;
 }
-.conainer .container-header .page {
-  display: inline-block;
-  float: right;
-  padding-right: 85px;
-}
-.conainer .container-header .page h2 {
-  font-family: 'Akaya Kanadaka', cursive;
-  font-size: 35px;
-}
 .conainer .container-header-animation {
   background: #f8f8f8;
   padding: 5px 15px;
@@ -210,15 +227,6 @@ a {
   padding: 12px 20px;
   display: block;
 }
-.conainer .container-header-animation .page {
-  display: inline-block;
-  float: right;
-  padding-right: 85px;
-}
-.conainer .container-header-animation .page h2 {
-  font-family: 'Akaya Kanadaka', cursive;
-  font-size: 35px;
-}
 .conainer .act {
   font-family: Arial;
 }
@@ -243,6 +251,7 @@ a {
 }
 .conainer .act .cards .card img {
   width: 250px;
+  height: 350px;
   transition: all 0.5s;
 }
 .conainer .act .cards .card img:hover {
@@ -257,7 +266,7 @@ a {
   font-size: 20px;
 }
 .me {
-  margin-top: 55px;
+  margin-top: 250px;
   width: 100%;
   height: 55px;
   text-align: center;
