@@ -52,9 +52,9 @@ a {
 .mouse-parallax-bg {
   z-index: -100;
   position: fixed;
-  background-image: url("../img/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
+  background-image: url("../img/bg.png");
   background-size: cover;
   width: 110%;
   height: 110%;
@@ -66,7 +66,6 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #f1f1f1;
   z-index: 30;
 }
 .contpre small {
@@ -139,6 +138,10 @@ a {
   outline: none;
   cursor: pointer;
   font-size: 20px;
+  transition: all 0.3s ease;
+}
+.conainer .container-header .clothes .dropdown .drop-btn:hover {
+  color: #7c8686;
 }
 .conainer .container-header .clothes .dropdown .drop-menu {
   position: absolute;
@@ -149,13 +152,24 @@ a {
   opacity: 0;
   background: #f8f8f8;
   visibility: hidden;
+  border-radius: 15px;
   transition: all 0.3s ease;
 }
 .conainer .container-header .clothes .dropdown .drop-menu ul li a {
+  text-align: center;
   font-weight: bolder;
   color: #34495e;
   padding: 12px 20px;
   display: block;
+  border-bottom: 2px solid #eee;
+  transition: all 0.3s ease;
+}
+.conainer .container-header .clothes .dropdown .drop-menu ul li a:last-child {
+  border-bottom: none;
+}
+.conainer .container-header .clothes .dropdown .drop-menu ul li a:hover {
+  color: #7c8686;
+  font-size: 15px;
 }
 .conainer .container-header-animation {
   background: #f8f8f8;
@@ -210,6 +224,9 @@ a {
   cursor: pointer;
   font-size: 20px;
 }
+.conainer .container-header-animation .clothes .dropdown .drop-btn:hover {
+  color: #7c8686;
+}
 .conainer .container-header-animation .clothes .dropdown .drop-menu {
   position: absolute;
   z-index: 100;
@@ -219,13 +236,24 @@ a {
   opacity: 0;
   background: #f8f8f8;
   visibility: hidden;
+  border-radius: 15px;
   transition: all 0.3s ease;
 }
 .conainer .container-header-animation .clothes .dropdown .drop-menu ul li a {
+  text-align: center;
   font-weight: bolder;
   color: #34495e;
   padding: 12px 20px;
   display: block;
+  border-bottom: 2px solid #eee;
+  transition: all 0.3s ease;
+}
+.conainer .container-header-animation .clothes .dropdown .drop-menu ul li a:last-child {
+  border-bottom: none;
+}
+.conainer .container-header-animation .clothes .dropdown .drop-menu ul li a:hover {
+  color: #7c8686;
+  font-size: 15px;
 }
 .conainer .act {
   font-family: Arial;

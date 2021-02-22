@@ -22,7 +22,7 @@ let hed = document.querySelector('.conainer .container-header-animation')
 let hede = document.querySelector('.conainer .container-header')
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() < 200) {
+    if ($(this).scrollTop() < 100) {
         $( hed ).removeClass( 'active' );
         $( hede ).removeClass( 'active' );
     } else {
@@ -43,7 +43,7 @@ for (let anchor of anchors) {
 
 
     const blockID = anchor.getAttribute('href').substr(1)
-    
+
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'

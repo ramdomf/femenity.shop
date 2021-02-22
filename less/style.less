@@ -1,0 +1,359 @@
+// out:../css/style.css
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Font";
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, span, div, p, a {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	list-style: none;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 97, 197);; 
+  }
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mouse-parallax {
+    z-index: -100;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+
+}
+.mouse-parallax-bg {
+    z-index: -100;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    transition: all 0.1s ease;  
+}
+
+
+#p_prldr{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 30;
+}
+     
+    .contpre small{font-size:25px;}
+     
+    .contpre{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;top: 48%;
+    margin-left:-125px;
+    margin-top:-75px;
+    color:#fff;
+    font-size:40px;
+    letter-spacing:-2px;
+    text-align:center;
+    line-height:35px;}
+     
+
+// header
+.conainer {
+    z-index: 1;
+
+    // Mobile menu
+
+	.menu-container {
+		.overlay {
+			display: none;
+		}
+
+		.mobile-nav {
+			display: none;
+		}
+	}
+	
+// 
+    
+    .container-header {
+        background: #f8f8f8;
+        padding: 5px 15px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease;
+
+        &.active {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .logo {
+            display: inline-block;
+            img {
+                width: 50px;
+            }
+
+            h1 {
+                font-family: 'Akaya Kanadaka', cursive;
+                font-size: 35px;
+            }
+        }
+
+        .clothes {
+            margin: auto;
+            display: inline-block;
+            .dropdown {
+                position: relative;
+                &.active {
+                    .drop-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(10px);
+                    }
+                }
+            
+                .drop-btn {
+                    background: none;
+                    color: #34495e;
+                    display: inline-block;
+                    padding: 12px 32px 12px 20px;
+                    user-select: none;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 20px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: #7c8686;
+                    }
+                }
+                
+                .drop-menu {
+                    position: absolute;
+                    z-index: 100;
+                    left: 0;
+                    top: 115%;
+                    width: 100%;
+                    opacity: 0;
+                    background: #f8f8f8;
+                    visibility: hidden;
+                    border-radius: 15px;
+                    transition: all 0.3s ease;
+            
+                    ul {
+                        li {
+                            a {
+                                text-align: center;
+                                font-weight: bolder;
+                                color: #34495e;
+                                padding: 12px 20px;
+                                display: block;
+                                border-bottom: 2px solid #eee;
+                                transition: all 0.3s ease;
+
+                                &:last-child {
+                                    border-bottom: none;
+                                }
+
+                                &:hover {
+                                    color: #7c8686;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+// header animation
+    .container-header-animation {
+        background: #f8f8f8;
+        padding: 5px 15px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        transition: all 0.3s ease;
+        width: 100%;
+        z-index: 1;
+        transform: translateY(-120px);
+
+
+        &.active {
+            transform: translateY(-58px);
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        .logo {
+            display: inline-block;
+            img {
+                width: 50px;
+            }
+
+            button {
+                display: none;
+            }
+
+            h1 {
+                font-family: 'Akaya Kanadaka', cursive;
+                font-size: 35px;
+            }
+        }
+
+        .clothes {
+            margin: auto;
+            display: inline-block;
+            .dropdown {
+                position: relative;
+                &.active {
+                    .drop-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(10px);
+                    }
+                }
+            
+                .drop-btn {
+                    background: none;
+                    color: #34495e;
+                    display: inline-block;
+                    padding: 12px 32px 12px 20px;
+                    user-select: none;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 20px;
+
+                    &:hover {
+                        color: #7c8686;
+                    }
+                }
+                
+                .drop-menu {
+                    position: absolute;
+                    z-index: 100;
+                    left: 0;
+                    top: 115%;
+                    width: 100%;
+                    opacity: 0;
+                    background: #f8f8f8;
+                    visibility: hidden;
+                    border-radius: 15px;
+                    transition: all 0.3s ease;
+            
+                    ul {
+                        li {
+                            a {
+                                text-align: center;
+                                font-weight: bolder;
+                                color: #34495e;
+                                padding: 12px 20px;
+                                display: block;
+                                border-bottom: 2px solid #eee;
+                                transition: all 0.3s ease;
+
+                                &:last-child {
+                                    border-bottom: none;
+                                }
+
+                                &:hover {
+                                    color: #7c8686;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .act {
+        font-family: Arial;
+        h2 {
+            font-size: 45px;
+            font-weight: bolder;
+            text-align: center;
+            padding-top: 35px;
+        }
+
+        .cards {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card {
+                padding-right: 100px;
+                cursor: pointer;
+                overflow: hidden;
+                text-align: center;
+                img {
+                    width: 250px;
+                    height: 350px;
+                    transition: all 0.5s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+    
+                h2 {
+                    font-weight: bolder;
+                    font-size: 35px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.me {
+    margin-top: 250px;
+    width: 100%;
+	height: 55px;
+    text-align: center;
+    user-select: none;
+    h2 {
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        padding-top: 15px;
+        font-weight: bolder;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

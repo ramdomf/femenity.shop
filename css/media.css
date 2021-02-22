@@ -1,4 +1,18 @@
-@media (max-width: 606px) {
+@media (max-width: 1300px) {
+  .conainer .act .cards .card {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    max-width: 600px;
+  }
+  .conainer .act .cards .card {
+    padding-right: 0;
+  }
+}
+@media (max-width: 600px) {
   .wrapper {
     padding: 0 15px;
   }
@@ -43,6 +57,7 @@
     font-size: 30px;
     color: #000;
     padding: 8px 10px;
+    cursor: pointer;
   }
   .conainer .menu-container .mobile-nav .mobile-section {
     padding: 30px;
